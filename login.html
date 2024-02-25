@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css"> 
+    <meta charset="UTF-8">
+    <title>Pieteikšanās</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Lai sākt</a></li>
+            <li><a href="registration.html">Registrēties</a></li>
+            <li><a href="ierosinajuma_izveide.html">Izveidot savu ierosinājumu</a></li>
+            <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
+            <li><a href="statistika.html">Statistika</a></li>
+            <li><a href="profils.html">Mans profils</a></li>
+            
+        
+        </ul>
+    </nav>
+    <div class="login-container">
+        <h2>Pieteikšanās</h2>
+        <form action="/login" method="POST">
+            <label for="email">E-pasts</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Parole</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Pieteikties</button>
+        </form>
+        <div class="login-link">
+            <small><a href="registration.html">Man nav profila</a></small>
+        </div>
+        
+    </div>
+</body>
+</html>

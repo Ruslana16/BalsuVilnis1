@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ierosinajumu_izveide.css">
+    <meta charset="UTF-8">
+    <title>Aptaujas izveide</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Lai sākt</a></li>
+            <li><a href="registration.html">Registrēties</a></li>
+            <li><a href="ierosinajuma_izveide.html">Izveidot savu ierosinājumu</a></li>
+            <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
+            <li><a href="statistika.html">Statistika</a></li>
+            <li><a href="profils.html">Mans profils</a></li>
+            
+        
+        </ul>
+    </nav>
+    <h2>Izveidot jaunu aptauju</h2>
+    <form action="/create_poll" method="POST">
+        <label for="title">Nosaukums:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="theme">Tēma:</label>
+        <select id="theme" name="theme">
+            <option value="education">Izglītība</option>
+            <option value="culture">Kultūra</option>
+            <option value="culture">Politika</option>
+            <option value="culture">Sabiedrība</option>
+            <option value="culture">Vide un ilgtspējība</option>
+            <option value="culture">Veselība</option>
+            <option value="culture">Tehnoloģijas un inovācijas</option>
+            <option value="culture">Veselība</option>
+            <option value="culture">Ekonomika</option>
+            <option value="culture"></option>Transports un infrastruktūra</option>
+            
+        </select>
+        <label for="description">Apraksts:</label>
+        <textarea id="description" name="description" required></textarea>
+        <div>
+            <label>Balsošanas iespējas:</label>
+            <div><input type="radio" name="vote" value="yes"> Jā</div>
+            <div><input type="radio" name="vote" value="no"> Nē</div>
+            <!-- Pievienojiet citas balsošanas iespējas -->
+        </div>
+        <button type="submit">Izveidot aptauju</button>
+    </form>
+</body>
+</html>
+

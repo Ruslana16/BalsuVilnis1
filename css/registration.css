@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота вьюпорта, чтобы центрировать форму по вертикали */
+    background-color: #373a3e; /* Темно-серый фон */
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: transparent; /* Для демонстрации, возможно потребуется настройка */
+}
+
+nav ul li {
+    display: inline; /* Для горизонтального списка */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Белый цвет текста ссылок */
+    text-decoration: none;
+}
+
+form {
+    background-color: #2f3136; /* Фон формы */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени для глубины */
+}
+
+form h2 {
+    color: #ffffff; /* Белый цвет заголовка */
+    margin-bottom: 20px; /* Отступ заголовка от формы */
+}
+
+form label {
+    color: #adb8c0; /* Светло-серый текст для контраста */
+    display: block; /* Чтобы input начинался с новой строки */
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] { /* Добавлен селектор для поля электронной почты */
+    width: 100%; /* Полная ширина контейнера */
+    padding: 10px;
+    margin-bottom: 15px; /* Отступ между полями ввода */
+    border: 1px solid #444; /* Граница полей ввода */
+    background-color: #40444b; /* Фон полей ввода */
+    color: #ffffff; /* Цвет текста внутри полей ввода */
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%; /* Полная ширина контейнера */
+    padding: 10px;
+    background-color: #5865f2; /* Ярко-синий фон кнопок */
+    color: #ffffff; /* Белый текст на кнопках */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4852c4; /* Темно-синий фон кнопок при наведении */
+}
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(14, 14, 14, 0.2);
+    width: 300px; /* Пример ширины */
+    margin: auto;
+    margin-top: 50px; /* Отступ сверху */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между полями формы */
+}
+
+.form-group label {
+    color: #ADB8C0; /* Цвет текста */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5865F2; /* Цвет кнопки */
+    color: white;
+    cursor: pointer;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #05b6fc; /* Цвет ссылки */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+

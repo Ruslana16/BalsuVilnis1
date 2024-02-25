@@ -1,0 +1,67 @@
+body {
+    background-color: #36393f; /* Темно-серый цвет фона, как в Discord */
+    color: #ffffff; /* Белый цвет текста */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #2f3136; /* Чуть более светлый оттенок серого для фона контейнера */
+    border-radius: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
+a {
+    color: #00aff4; /* Цвет ссылок, светло-голубой для контраста */
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background-color: #2f3136;
+    color: white;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #5865f2; /* Цвет кнопок, ярко-синий, как кнопки в Discord */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #2f3136; /* Темный фон меню */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Цвет текста ссылок */
+}

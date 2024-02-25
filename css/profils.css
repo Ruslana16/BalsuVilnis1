@@ -1,0 +1,10 @@
+.profile-header {
+    background-color: #202225; /* Чуть более темный фон для заголовка профиля */
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-bottom: 20px;
+}

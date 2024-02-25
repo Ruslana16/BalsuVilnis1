@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <meta charset="UTF-8">
+    <title>Reģistrācija</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Lai sākt</a></li>
+            <li><a href="registration.html">Registrēties</a></li>
+            <li><a href="ierosinajuma_izveide.html">Izveidot savu ierosinājumu</a></li>
+            <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
+            <li><a href="statistika.html">Statistika</a></li>
+            <li><a href="profils.html">Mans profils</a></li>
+            
+        
+        </ul>
+    </nav>
+    <div class="registration-container">
+        <h2>Reģistrēties</h2>
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="nickname">Lietotājvārds</label>
+                <input type="text" id="nickname" name="nickname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-pasts</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Parole</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Reģistrēties</button>
+        </form>
+        <div class="login-link">
+            <small><a href="login.html">Man ir profils</a></small>
+        </div>
+    </div>
+</body>
+</html>
+
+
