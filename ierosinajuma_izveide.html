@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="lv">
-
-
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ierosinajumu_izveide.css">
+    <link rel="stylesheet" href="css/ierosinajuma_izveide.css">
+    <link rel="stylesheet" href="python/ierosinajumi.py">
+    <link rel="stylesheet" href="python/app1.py">
     <meta charset="UTF-8">
     <title>Aptaujas izveide</title>
 </head>
@@ -17,38 +17,68 @@
             <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
             <li><a href="statistika.html">Statistika</a></li>
             <li><a href="profils.html">Mans profils</a></li>
-            
-        
+
+
         </ul>
     </nav>
-    <h2>Izveidot jaunu aptauju</h2>
-    <form action="/create_poll" method="POST">
-        <label for="title">Nosaukums:</label>
-        <input type="text" id="title" name="title" required>
-        <label for="theme">Tēma:</label>
-        <select id="theme" name="theme">
-            <option value="education">Izglītība</option>
-            <option value="culture">Kultūra</option>
-            <option value="culture">Politika</option>
-            <option value="culture">Sabiedrība</option>
-            <option value="culture">Vide un ilgtspējība</option>
-            <option value="culture">Veselība</option>
-            <option value="culture">Tehnoloģijas un inovācijas</option>
-            <option value="culture">Veselība</option>
-            <option value="culture">Ekonomika</option>
-            <option value="culture"></option>Transports un infrastruktūra</option>
-            
-        </select>
-        <label for="description">Apraksts:</label>
-        <textarea id="description" name="description" required></textarea>
-        <div>
-            <label>Balsošanas iespējas:</label>
-            <div><input type="radio" name="vote" value="yes"> Jā</div>
-            <div><input type="radio" name="vote" value="no"> Nē</div>
-            <!-- Pievienojiet citas balsošanas iespējas -->
-        </div>
-        <button type="submit">Izveidot aptauju</button>
-    </form>
+    <div class="container">
+        <h2>Izveidot jaunu aptauju</h2>
+        <form class="poll-form" onsubmit="handleSubmit(event)">
+            <form class="poll-form">
+                <div class="form-field">
+                    <label for="title" class="form-label">Nosaukums:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-field">
+                    <label for="theme" class="form-label">Tēma:</label>
+                    <select id="theme" name="theme">
+                        <option value="education">Izglītība</option>
+                        <option value="culture">Kultūra</option>
+                        <option value="culture">Politika</option>
+                        <option value="culture">Sabiedrība</option>
+                        <option value="culture">Veselība</option>
+                        <option value="culture">Ekonomika un finanses</option>
+                        <option value="culture">Transports un infastruktūra</option>
+                        <option value="culture">Pilsēta</option>
+
+
+                        <!-- Добавьте другие опции по необходимости -->
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="description" class="form-label">Apraksts:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-field custom-options">
+                    <label class="form-label">Pielāgotas balsošanas iespējas:</label>
+                    <input type="text" id="customOption" placeholder="Pievienot jaunu variantu">
+                    <button type="button" onclick="addOption()">Pievienot</button>
+                </div>
+                <div id="optionsList" class="options-list"></div>
+                <button type="submit">Izveidot aptauju</button>
+            </form>
+    </div>
+    <script>
+        function addOption() {
+            const optionsList = document.getElementById('optionsList');
+            const customOptionValue = document.getElementById('customOption').value.trim();
+            if (customOptionValue) {
+                const optionElement = document.createElement('div');
+                optionElement.textContent = customOptionValue;
+                optionsList.appendChild(optionElement);
+                document.getElementById('customOption').value = ''; // Clear input field
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+            // Тут могут быть ваша логика валидации и отправки данных на сервер
+
+            alert("Jūsu ierosinājums ir apublicēts. Paldies par Jūsu ieguldījumu!"); // Показываем сообщение
+        }
+    </script>
 </body>
+</html>
 </html>
 

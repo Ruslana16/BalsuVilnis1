@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="lv">
-
-
 <head>
+    <meta charset="UTF-8">
+    <title>Visi Ierosinājumi</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aptauju_saraksts.css">
-    <meta charset="UTF-8">
-    <title>Aptauju saraksts</title>
+    <link rel="stylesheet" href="python/ierosinajumi.py">
 </head>
 <body>
     <nav>
@@ -17,20 +16,23 @@
             <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
             <li><a href="statistika.html">Statistika</a></li>
             <li><a href="profils.html">Mans profils</a></li>
-            
-        
         </ul>
     </nav>
-    <h2>Aptauju saraksts</h2>
-    <div id="polls">
-        <!-- Aptaujas tiks pievienotas šeit -->
-        <div class="poll">
-            <h3>Aptaujas nosaukums</h3>
-            <p>Apraksts...</p>
-            <button>Man aktuāli!</button>
-            <a href="/poll_details">Sīkāk</a>
-        </div>
-        <!-- Pievienojiet citas aptaujas -->
+
+
+    {% for poll in polls %}
+    <div>
+        <h2>{{ poll.title }}</h2>
+        <p>Theme: {{ poll.theme }}</p>
+        <p>Description: {{ poll.description }}</p>
     </div>
+    {% else %}
+    <p>No polls found.</p>
+    {% endfor %}
 </body>
 </html>
+
+
+
+
+

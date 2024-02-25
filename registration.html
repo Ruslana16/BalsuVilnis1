@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registration.css">
     <meta charset="UTF-8">
-    <title>Reģistrācija</title>
+    <title>Pieteikšanās</title>
 </head>
 <body>
     <nav>
@@ -15,32 +15,45 @@
             <li><a href="aptauju_saraksts.html">Visi ierosinājumi</a></li>
             <li><a href="statistika.html">Statistika</a></li>
             <li><a href="profils.html">Mans profils</a></li>
-            
-        
         </ul>
     </nav>
-    <div class="registration-container">
-        <h2>Reģistrēties</h2>
+    <div class="login-container">
+        <h2>Pieteikšanās</h2>
         <form action="/register" method="POST">
             <div class="form-group">
-                <label for="nickname">Lietotājvārds</label>
-                <input type="text" id="nickname" name="nickname" required>
+                <label for="username">Lietotājvārds:</label>
+                <input type="text" id="username" name="username" required>
             </div>
             <div class="form-group">
-                <label for="email">E-pasts</label>
+                <label for="email">E-pasts:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="password">Parole</label>
+                <label for="password">Parole:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Reģistrēties</button>
+            <button type="submit">Pieteikties</button>
         </form>
+   
         <div class="login-link">
             <small><a href="login.html">Man ir profils</a></small>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (event) {
+                
+                event.preventDefault();
+                
+                alert('Jūs esat reģistrētie!');
+                
+            });
+        });
+    </script>
+
 </body>
 </html>
+
 
 

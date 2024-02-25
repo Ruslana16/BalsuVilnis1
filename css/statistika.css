@@ -2,8 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Высота вьюпорта, чтобы центрировать форму по вертикали */
-    background-color: #36393f; /* Убедитесь, что этот стиль не конфликтует с style.css */
+    height: 100vh; 
+    background-color: #36393f; 
 }
 
 nav ul {
@@ -11,58 +11,58 @@ nav ul {
     top: 0;
     left: 0;
     padding: 20px;
-    background-color: transparent; /* Для демонстрации, возможно потребуется настройка */
+    background-color: transparent; 
 }
 
 nav ul li {
-    display: inline; /* Для горизонтального списка */
+    display: inline; 
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #ffffff; /* Белый цвет текста ссылок */
+    color: #ffffff; 
     text-decoration: none;
 }
 
 form {
-    background-color: #2f3136; /* Фон формы */
+    background-color: #2f3136; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавление тени для глубины */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 form h2 {
-    color: #ffffff; /* Белый цвет заголовка */
-    margin-bottom: 20px; /* Отступ заголовка от формы */
+    color: #ffffff; 
+    margin-bottom: 20px; 
 }
 
 form label {
-    color: #adb8c0; /* Светло-серый текст для контраста */
-    display: block; /* Чтобы input начинался с новой строки */
+    color: #adb8c0; 
+    display: block; 
     margin-bottom: 5px;
 }
 
 form input[type="text"],
 form input[type="password"] {
-    width: 100%; /* Полная ширина контейнера */
+    width: 100%; 
     padding: 10px;
-    margin-bottom: 15px; /* Отступ между полями ввода */
-    border: 1px solid #444; /* Граница полей ввода */
-    background-color: #40444b; /* Фон полей ввода */
-    color: #ffffff; /* Цвет текста внутри полей ввода */
+    margin-bottom: 15px; 
+    border: 1px solid #444; 
+    background-color: #40444b; 
+    color: #ffffff; 
     border-radius: 4px;
 }
 
 form button {
-    width: 100%; /* Полная ширина контейнера */
+    width: 100%; 
     padding: 10px;
-    background-color: #5865f2; /* Ярко-синий фон кнопок */
-    color: #ffffff; /* Белый текст на кнопках */
+    background-color: #5865f2; 
+    color: #ffffff; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #4852c4; /* Темно-синий фон кнопок при наведении */
+    background-color: #4852c4; 
 }
